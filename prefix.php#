@@ -1,0 +1,13 @@
+<?php
+
+if($_POST["word"] != "")
+{
+	printf("%s\n", shell_exec("dict/pref " . $_POST["word"]));
+}
+
+?>
+
+<form action="prefix.php" method="post">
+	<p>Enter a prefix: <input type="text" name="word" /></p>
+	<p><input type="submit" /></p>
+</form>

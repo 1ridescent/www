@@ -1,0 +1,1 @@
+lambent : glowing with soft radiance [a lambent light]
